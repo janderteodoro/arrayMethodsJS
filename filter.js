@@ -25,7 +25,7 @@ function myFilter (value, index, array ) {
 
 const teams = ['Santos', 'Corithans', 'São Paulo', 'Palmeiras'];
 const theBestTeam = teams.filter((value) => {
-    if (value === 'Santos') return value;
+    return value === 'Santos'
 })
 
 /*
