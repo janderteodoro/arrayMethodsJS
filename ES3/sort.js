@@ -37,3 +37,24 @@ const m = numbers.sort((a, b) => b -a);
 /*
 valor de m = [ 1111, 222, 33, 4 ]
 */
+
+//--------------------------------------------------------------------------------------------------------------------
+
+/*
+O método sort() diferencia letras maiúsculas de minúsculas e se você nao quer que isso aconteça, deve-se passar uma fuinção que 
+realize esse tratamento.
+*/
+
+const b = ['ant', 'Bug', 'cat', 'Dog'];
+const aSort = b.sort(); // como ele diferencia o valor de aSort é = [ 'Bug', 'Dog', 'ant', 'cat' ]
+
+// Para que isso nao aconteça, colocamos o ToLoweCase() na parada 
+
+const bSort = b.sort((x, y) => {
+    let a = x.toLocaleLowerCase();
+    let b = y.toLocaleLowerCase();
+    if (a < b) return  -1;
+    if (a > b) return 1;
+})
+
+// valor de bSort = [ 'ant', 'Bug', 'cat', 'Dog' ] Note que criamos outra variável dentro da função para nao interferir nos elementos do array
