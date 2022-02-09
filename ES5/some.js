@@ -13,6 +13,11 @@
 // --------------------------------------------------------
 
 const c = [11, 2, 3, 4, 5];
-const d = c.some(value =>  value < 10);
+const d = c.some(value =>  value < 10); // true
 
- console.log(d);
+/*
+ ele tambem retorna true pois temos um elemento (mais na verdade) dentro do array que retorna true no predicado. 
+
+ como vimos anteriormente isso é mais do que suficiente para os some() retornar true
+*/
+ 
