@@ -39,4 +39,4 @@ function findAll(array, elementSearch) {
 
 const testArray = [0, 1, 2, 1, 2, 1, 2, 34, 4, 5, 6, 5, 6, 5, 9, 6, 5, 6]; 
 
-let mySearch = findAll(testArray, 6); // [ 10, 12, 15, 17 ] todos ídices que foram encontrados 6
+let mySearch = findAll(testArray, 6); // [ 10, 12, 15, 17 ] todos ídices que foram encontrados 6 
